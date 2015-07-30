@@ -1,4 +1,5 @@
 Social Compass for Retroshare
+---------------------
 
 This plugin lets you see which of your friends are probably in the direction of a distant ID
 
