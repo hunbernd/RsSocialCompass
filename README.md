@@ -1,10 +1,6 @@
-Empty Plugin for Retroshare
+Social Compass for Retroshare
 
-This is an empty plugin for retroshare with no networking.
-It is the LinksCloud plugin stripped down.
-I have perhaps done a few silly things, like hardcode the translations.
-Please do send a pull request with any further fixes/tweaks/strippings.
-
+This plugin lets you see which of your friends are probably in the direction of a distant ID
 
 ## Quick Start:
 
@@ -12,16 +8,19 @@ If you know what you are doing, do that!
 
 otherwise
 
-### Make a new user
+### Clone to rsdir plugins
 ```
-  useradd retrotester
+  cd ~/RetroShare/Plugins
+  git clone https://github.com/chozabu/RsSocialCompass.git
 ```
 ### inspect then run the build and test script (KDE)
 ```
   cat testit.sh
   ./testit.sh
 ```
-### Exit the new instance of retroshare when done testing
 
+
+
+this plugin uses "EmptyPlugin" as a base
 
 
