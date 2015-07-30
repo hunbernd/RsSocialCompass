@@ -1,6 +1,6 @@
 make clean
-qmake-qt4
+qmake
 make clean
 make
-kdesudo -u retrotester cp libSocialCompass.so* /home/retrotester/.retroshare/extensions6/
-kdesudo -u retrotester ../../retroshare-gui/src/RetroShare
+cp libSocialCompass.so* ~/.retroshare/extensions6/
+../../retroshare-gui/src/RetroShare
