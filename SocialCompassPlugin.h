@@ -25,7 +25,7 @@ class SocialCompassPlugin: public RsPlugin
 		virtual void setInterfaces(RsPlugInInterfaces& interfaces);
     private:
 		mutable RsPluginHandler *mPlugInHandler;
-		mutable RsFiles* mFiles;
+		mutable RsGRouter* mGRouter;
 		mutable RsPeers* mPeers;
 		mutable MainPage* mainpage ;
 		mutable QIcon* mIcon ;

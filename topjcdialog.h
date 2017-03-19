@@ -18,7 +18,7 @@ class TopJCDialog  : public MainPage
     Q_OBJECT
     
 public:
-    explicit TopJCDialog(QWidget *parent = 0);
+	explicit TopJCDialog(RsPeers *peers, RsGRouter *gRouter, QWidget *parent = 0);
     ~TopJCDialog();
     
     void lookupGxsId(RsGxsId gxsid);
@@ -27,6 +27,8 @@ private slots:
 
 private:
     Ui::TopJCDialog *ui;
+	RsPeers *mPeers;
+	RsGRouter *mGRouter;
 };
 
 #endif // TOPJCDIALOG_H

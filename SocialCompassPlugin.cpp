@@ -49,19 +49,19 @@ SocialCompassPlugin::SocialCompassPlugin()
         mIcon = NULL ;
         mPlugInHandler = NULL;
         mPeers = NULL;
-        mFiles = NULL;
+		mGRouter = NULL;
 }
 
 void SocialCompassPlugin::setInterfaces(RsPlugInInterfaces &interfaces){
 
     mPeers = interfaces.mPeers;
-    mFiles = interfaces.mFiles;
+	mGRouter = interfaces.mGRouter;
 }
 
 MainPage *SocialCompassPlugin::qt_page() const
 {
 	if(mainpage == NULL)
-                mainpage = new TopJCDialog();//mPeers, mFiles) ;
+				mainpage = new TopJCDialog(mPeers, mGRouter) ;
 
 	return mainpage ;
 }
